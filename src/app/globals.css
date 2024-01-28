@@ -15,7 +15,7 @@ body{
   overflow-x: hidden;
 }
 
-.greenArticle::before{
+.largeGreenBackground::before{
   content: "";
   position: absolute;
   width: calc(100% + 1000px);
@@ -50,3 +50,4 @@ body{
 /* TODO: How is better to use links or style for fonts or to download them */
 /* TODO: Check for smaller size, better solution with different positions... width: calc(100% + 1000px);  */
 /* TODO: Handle all alts with one format Upper lower?...  */
+/* TODO: Change the author of the all the commits to the personal account */

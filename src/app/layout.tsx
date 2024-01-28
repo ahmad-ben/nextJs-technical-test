@@ -50,7 +50,8 @@ export default function RootLayout(
     <html lang="en">
       <body className="container mx-auto bg-primary text-white font-normal">
         {children}
-        <footer className="greenArticle article relative px-5 flex pb-5">
+        <footer 
+          className="largeGreenBackground article relative px-5 flex pb-5">
           <Image 
             src={upGreenWave} alt="Green Wave Icon" 
             className="wave absolute bottom-full"

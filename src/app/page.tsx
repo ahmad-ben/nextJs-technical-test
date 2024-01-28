@@ -87,7 +87,7 @@ export default function HomePage() {
           </p>
         </article>
 
-        <article className="greenArticle article relative px-20">
+        <article className="largeGreenBackground article relative px-20">
           <Image 
             src={upGreenWave} alt="Green Wave Icon" 
             className="wave absolute bottom-full"
