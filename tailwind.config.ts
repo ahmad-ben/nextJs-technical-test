@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         'primary': '#1E2E5C',
         'secondary': '#2B7848'
+      },
+      listStyleType: {
+        'lower-roman': 'lower-roman'
       }
     },
   },

@@ -15,10 +15,6 @@ body{
   overflow-x: hidden;
 }
 
-.greenArticle{
-  position: relative;
-}
-
 .greenArticle::before{
   content: "";
   position: absolute;
@@ -31,14 +27,26 @@ body{
   z-index: -1;
 }
 
-.wave{
+/* .wave{
   width: calc(100% + 1000px);
   max-width: none;
   left: 50%;
   translate: -50%;
   aspect-ratio: unset;
   height: 50px;
+} */
+
+.wave{
+  width: calc(100% + 1000px);  
+  max-width: none;
+  left: 50%;
+  translate: -50%;
+  height: 100px;
 }
+
+
 
 /* TODO: Add 404 page */
 /* TODO: How is better to use links or style for fonts or to download them */
+/* TODO: Check for smaller size, better solution with different positions... width: calc(100% + 1000px);  */
+/* TODO: Handle all alts with one format Upper lower?...  */
