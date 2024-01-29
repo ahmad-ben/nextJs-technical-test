@@ -2,12 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-// import googleIcon from "../../public/icons/google.svg";
-// import facebookIcon from "../../public/icons/facebook.svg";
-// import linkedInIcon from "../../public/icons/linkedIn.svg";
-// import instagramIcon from "../../public/icons/instagram.svg";
-// import skypeIcon from "../../public/icons/skype.svg";
-// import twitterIcon from "../../public/icons/twitter.svg";
 import upGreenWave from "../../public/icons/up-green-wave.svg";
 import { log } from "console";
 
@@ -35,14 +29,12 @@ export default function RootLayout(
   const renderSocialMediaLinksIcons = () => 
     socialMediaNames.map( name =>
       <li key={name}>
-        <button>
-          <Link href={`${name} URl`}>
-            <Image 
-              src={`/icons/${name}.svg`} alt={`${name} icon`}
-              className="max-w-full" width={45} height={45}
-            />
-          </Link>
-        </button>
+        <Link href={`${name} URl`}>
+          <Image 
+            src={`/icons/${name}.svg`} alt={`${name} icon`}
+            className="max-w-full" width={45} height={45}
+          />
+        </Link>
       </li>
     )
 
@@ -51,7 +43,7 @@ export default function RootLayout(
       <body className="container mx-auto bg-primary text-white font-normal">
         {children}
         <footer 
-          className="largeGreenBackground article relative px-5 flex pb-5">
+          className="largeGreenBackground article relative px-5 flex gap-5 pb-5">
           <Image 
             src={upGreenWave} alt="Green Wave Icon" 
             className="wave absolute bottom-full"
